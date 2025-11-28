@@ -1,6 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import heroImage from "@/assets/hero-image.jpg";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+import heroImage1 from "@/assets/hero-image.jpg";
+import heroImage2 from "@/assets/hero-2.jpg";
+import heroImage3 from "@/assets/hero-3.jpg";
 
 // Hero Section - Main landing section with call-to-action
 export const Hero = () => {
@@ -9,16 +13,41 @@ export const Hero = () => {
     document.getElementById("contato")?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const heroImages = [
+    { src: heroImage1, alt: "Workspace profissional de edição" },
+    { src: heroImage2, alt: "Estúdio de fotografia profissional" },
+    { src: heroImage3, alt: "Equipamento de fotografia e iluminação" },
+  ];
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
+      {/* Background Carousel with Overlay */}
       <div className="absolute inset-0 z-0">
-        <img
-          src={heroImage}
-          alt="Workspace profissional de edição"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-br from-background/95 via-background/90 to-background/80" />
+        <Carousel
+          opts={{ loop: true }}
+          plugins={[
+            Autoplay({
+              delay: 5000,
+              stopOnInteraction: false,
+            }),
+          ]}
+          className="w-full h-full"
+        >
+          <CarouselContent className="h-screen m-0">
+            {heroImages.map((image, index) => (
+              <CarouselItem key={index} className="p-0">
+                <div className="relative w-full h-screen">
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-br from-background/95 via-background/90 to-background/80" />
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </Carousel>
       </div>
 
       {/* Content */}
