@@ -157,9 +157,27 @@ export const Portfolio = () => {
                   )}
                 </div>
 
+                {/* Bootstrap-style Indicators */}
+                {selectedProject.images.length > 1 && (
+                  <div className="flex gap-2 justify-center py-4">
+                    {selectedProject.images.map((_, idx) => (
+                      <button
+                        key={idx}
+                        onClick={() => setCurrentImageIndex(idx)}
+                        className={`h-2 rounded-full transition-all ${
+                          currentImageIndex === idx
+                            ? "w-8 bg-accent"
+                            : "w-2 bg-muted-foreground/30 hover:bg-muted-foreground/50"
+                        }`}
+                        aria-label={`Ir para imagem ${idx + 1}`}
+                      />
+                    ))}
+                  </div>
+                )}
+
                 {/* Thumbnail Navigation */}
                 {selectedProject.images.length > 1 && (
-                  <div className="flex gap-2 p-6 justify-center overflow-x-auto">
+                  <div className="flex gap-2 px-6 pb-6 justify-center overflow-x-auto">
                     {selectedProject.images.map((img, idx) => (
                       <button
                         key={idx}
