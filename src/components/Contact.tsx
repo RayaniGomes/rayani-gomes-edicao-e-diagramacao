@@ -6,7 +6,7 @@ import { Mail, MessageCircle, Phone } from "lucide-react";
 export const Contact = () => {
   const whatsappNumber = "5584994706578"; // Format: country code + number
   const whatsappMessage = encodeURIComponent(
-    "Olá! Gostaria de solicitar um orçamento para edição de fotos."
+    "Olá! Gostaria de solicitar um orçamento."
   );
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
@@ -41,7 +41,7 @@ export const Contact = () => {
               </div>
               <Button
                 size="lg"
-                className="w-full bg-accent hover:bg-accent/90 text-accent-foreground"
+                className="group bg-accent text-accent-foreground shadow-lg hover:bg-accent/80 hover:-translate-y-1 transition-all duration-300 text-lg px-8 py-6 rounded-full"
                 onClick={() => window.open(whatsappUrl, "_blank")}
               >
                 <MessageCircle className="mr-2 h-5 w-5" />
@@ -51,7 +51,7 @@ export const Contact = () => {
           </Card>
 
           {/* Email Card */}
-          <Card className="hover:shadow-medium transition-shadow border border-border/50">
+          <Card className="shadow-lg hover:shadow-medium transition-shadow border border-border/50">
             <CardContent className="p-8 text-center space-y-6">
               <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mx-auto">
                 <Mail className="w-8 h-8 text-accent" />
@@ -68,7 +68,7 @@ export const Contact = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="w-full border-2"
+                className="hover:bg-secondary/80 hover:-translate-y-1 hover:text-accent transition-smooth text-lg px-8 py-6 rounded-full shadow-lg"
                 onClick={() => window.open("mailto:gomes.rayani.96@gmail.com", "_blank")}
               >
                 <Mail className="mr-2 h-5 w-5" />

@@ -5,7 +5,7 @@ const benefits = [
   {
     icon: Clock,
     title: "Entrega Rápida",
-    description: "Prazo de 24-48h para a maioria dos projetos, sem comprometer a qualidade",
+    description: "Prazo de até 7 dias uteis para a maioria dos serviços, sem comprometer a qualidade",
   },
   {
     icon: Award,
@@ -20,7 +20,7 @@ const benefits = [
   {
     icon: DollarSign,
     title: "Preços Acessíveis",
-    description: "Valores justos com descontos progressivos para volumes maiores",
+    description: "Valores justos para serviços de alta qualidade",
   },
   {
     icon: User,
@@ -56,10 +56,10 @@ export const Benefits = () => {
             return (
               <div
                 key={index}
-                className="group p-6 rounded-2xl border border-border/50 bg-card hover:bg-accent/5 hover:border-accent/30 transition-all duration-300 hover:shadow-medium"
+                className="h-[160px] group p-6 rounded-2xl border border-border/50 bg-card shadow-lg hover:bg-accent/5 hover:border-accent/30 transition-all duration-300 hover:shadow-medium"
               >
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors shadow-lg">
                     <Icon className="w-6 h-6 text-accent" />
                   </div>
                   <div className="space-y-2">

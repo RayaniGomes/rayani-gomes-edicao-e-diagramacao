@@ -13,9 +13,8 @@ export const Pricing = () => {
       <div className="container px-4">
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold underline underline-offset-8 decoration-accent decoration-4">
             Preços
-            <span className="block text-accent">Transparentes</span>
           </h2>
           <p className="text-lg text-muted-foreground">
             Valores justos e claros, sem surpresas
@@ -25,8 +24,8 @@ export const Pricing = () => {
         {/* Design Services Pricing */}
         <div className="max-w-5xl mx-auto mb-16">
           <h3 className="text-2xl font-bold mb-8 text-center">Serviços de Design</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card className="hover:shadow-medium transition-shadow">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <Card className="hover:shadow-gold transition-shadow shadow-lg">
               <CardHeader>
                 <CardTitle className="text-xl">Capa</CardTitle>
                 <div className="mt-4">
@@ -47,7 +46,7 @@ export const Pricing = () => {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-medium transition-shadow">
+            <Card className="hover:shadow-gold transition-shadow shadow-lg">
               <CardHeader>
                 <CardTitle className="text-xl">Diagramação</CardTitle>
                 <CardDescription>Até 10 lâminas</CardDescription>
@@ -69,7 +68,7 @@ export const Pricing = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-accent border-2 hover:shadow-gold transition-shadow relative">
+            <Card className="border-accent border-2 hover:shadow-gold transition-shadow shadow-lg relative">
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-accent text-accent-foreground text-xs font-bold rounded-full">
                 COMBO
               </div>
@@ -91,11 +90,12 @@ export const Pricing = () => {
                     <Check className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" />
                     Economia de R$ 20
                   </li>
+                  
                 </ul>
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-medium transition-shadow">
+            <Card className="hover:shadow-gold transition-shadow shadow-lg">
               <CardHeader>
                 <CardTitle className="text-xl">Portfólio</CardTitle>
                 <div className="mt-4">
@@ -204,7 +204,7 @@ export const Pricing = () => {
           <Button
             size="lg"
             onClick={handleContact}
-            className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-gold text-lg px-8 py-6 rounded-xl"
+            className="group bg-accent text-accent-foreground shadow-lg hover:bg-accent/80 hover:-translate-y-1 transition-all duration-300 text-lg px-8 py-6 rounded-full"
           >
             Solicitar Orçamento Personalizado
           </Button>

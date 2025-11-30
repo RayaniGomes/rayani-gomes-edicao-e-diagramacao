@@ -2,9 +2,10 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
-import heroImage1 from "@/assets/hero-image.jpg";
-import heroImage2 from "@/assets/hero-2.jpg";
-import heroImage3 from "@/assets/hero-3.jpg";
+import heroImage1 from "@/assets/hero/hero-1.webp";
+import heroImage2 from "@/assets/hero/hero-2.webp";
+import heroImage3 from "@/assets/hero/hero-3.webp";
+import Navbar from "./Navbar";
 
 // Hero Section - Main landing section with call-to-action
 export const Hero = () => {
@@ -20,7 +21,7 @@ export const Hero = () => {
   ];
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Carousel with Overlay */}
       <div className="absolute inset-0 z-0">
         <Carousel
@@ -42,7 +43,7 @@ export const Hero = () => {
                     alt={image.alt}
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-br from-background/95 via-background/90 to-background/80" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-background/90 via-background/70 to-background/80" />
                 </div>
               </CarouselItem>
             ))}
@@ -53,11 +54,7 @@ export const Hero = () => {
       {/* Content */}
       <div className="container relative z-10 px-4 py-20 md:py-32">
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/20 text-sm font-medium text-accent">
-            <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-            Edição Profissional de Fotos
-          </div>
+          
 
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight tracking-tight">
@@ -77,7 +74,7 @@ export const Hero = () => {
             <Button
               size="lg"
               onClick={handleCTA}
-              className="group bg-accent hover:bg-accent/90 text-accent-foreground shadow-gold hover:shadow-gold/80 transition-all duration-300 text-lg px-8 py-6 rounded-xl"
+              className="group bg-accent text-accent-foreground shadow-lg hover:bg-accent/80 hover:-translate-y-1 transition-all duration-300 text-lg px-8 py-6 rounded-full"
             >
               Pedir Orçamento Agora
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -88,26 +85,10 @@ export const Hero = () => {
               onClick={() =>
                 document.getElementById("servicos")?.scrollIntoView({ behavior: "smooth" })
               }
-              className="border-2 hover:bg-secondary transition-smooth text-lg px-8 py-6 rounded-xl"
+              className="hover:bg-secondary/80 hover:-translate-y-1 hover:text-accent transition-smooth text-lg px-8 py-6 rounded-full shadow-lg"
             >
               Ver Serviços
             </Button>
-          </div>
-
-          {/* Trust Indicators */}
-          <div className="grid grid-cols-3 gap-8 pt-12 max-w-2xl mx-auto">
-            <div className="text-center">
-              <p className="text-3xl md:text-4xl font-bold text-accent">+500</p>
-              <p className="text-sm text-muted-foreground mt-1">Fotos Editadas</p>
-            </div>
-            <div className="text-center">
-              <p className="text-3xl md:text-4xl font-bold text-accent">24h</p>
-              <p className="text-sm text-muted-foreground mt-1">Entrega Rápida</p>
-            </div>
-            <div className="text-center">
-              <p className="text-3xl md:text-4xl font-bold text-accent">100%</p>
-              <p className="text-sm text-muted-foreground mt-1">Satisfação</p>
-            </div>
           </div>
         </div>
       </div>

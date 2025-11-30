@@ -23,7 +23,6 @@ const services = [
       "Remoção de elementos",
       "Manipulação digital",
       "Liquify e correções específicas",
-      "Requintes profissionais",
     ],
   },
   {
@@ -33,8 +32,8 @@ const services = [
     features: [
       "Design personalizado",
       "Layout profissional",
-      "Até 10 lâminas base",
-      "Lâminas extras disponíveis",
+      "Composição equilibrada",
+      "Requintes profissionais",
     ],
   },
   {
@@ -57,8 +56,8 @@ export const Services = () => {
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold">
-            Serviços
-            <span className="block text-accent">Profissionais</span>
+            Nossos
+            <span className="block text-accent">Serviços</span>
           </h2>
           <p className="text-lg text-muted-foreground">
             Soluções completas de edição e design para todas as suas necessidades fotográficas
@@ -72,13 +71,13 @@ export const Services = () => {
             return (
               <Card
                 key={index}
-                className="group hover:shadow-gold transition-all duration-300 hover:-translate-y-2 bg-card border-border/50"
+                className="group shadow-lg hover:shadow-gold transition-all duration-300 hover:-translate-y-2 bg-card border-border/50"
               >
                 <CardHeader>
-                  <div className="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
+                  <div className="w-14 h-14 rounded-lg bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors shadow-lg">
                     <Icon className="w-7 h-7 text-accent" />
                   </div>
-                  <CardTitle className="text-2xl">{service.title}</CardTitle>
+                  <CardTitle className="text-2xl font-body">{service.title}</CardTitle>
                   <CardDescription className="text-base">
                     {service.description}
                   </CardDescription>

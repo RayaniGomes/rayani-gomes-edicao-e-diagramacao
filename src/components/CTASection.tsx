@@ -30,7 +30,7 @@ export const CTASection = () => {
             <Button
               size="lg"
               onClick={handleCTA}
-              className="group bg-accent hover:bg-accent/90 text-accent-foreground shadow-gold hover:shadow-gold/80 transition-all duration-300 text-xl px-12 py-8 rounded-xl"
+              className="group bg-accent text-accent-foreground shadow-lg hover:bg-accent/80 hover:-translate-y-1 transition-all duration-300 text-lg px-8 py-6 rounded-full"
             >
               Quero Editar Minhas Fotos
               <ArrowRight className="ml-2 h-6 w-6 group-hover:translate-x-1 transition-transform" />
