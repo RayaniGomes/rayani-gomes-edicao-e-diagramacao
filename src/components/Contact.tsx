@@ -29,7 +29,7 @@ export const Contact = () => {
           {/* WhatsApp Card */}
           <Card className="border-2 border-accent/50 hover:border-accent transition-colors shadow-gold">
             <CardContent className="p-8 text-center space-y-6">
-              <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mx-auto">
+              <div className="w-16 h-16 rounded-lg bg-accent/10 flex items-center justify-center mx-auto">
                 <MessageCircle className="w-8 h-8 text-accent" />
               </div>
               <div className="space-y-2">
@@ -41,7 +41,7 @@ export const Contact = () => {
               </div>
               <Button
                 size="lg"
-                className="group bg-accent text-accent-foreground shadow-lg hover:bg-accent/80 hover:-translate-y-1 transition-all duration-300 text-lg px-8 py-6 rounded-full"
+                className="group bg-accent text-accent-foreground shadow-lg hover:bg-accent/80 hover:-translate-y-1 transition-all duration-300 text-lg px-8 py-6 rounded-lg"
                 onClick={() => window.open(whatsappUrl, "_blank")}
               >
                 <MessageCircle className="mr-2 h-5 w-5" />
@@ -53,7 +53,7 @@ export const Contact = () => {
           {/* Email Card */}
           <Card className="shadow-lg hover:shadow-medium transition-shadow border border-border/50">
             <CardContent className="p-8 text-center space-y-6">
-              <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mx-auto">
+              <div className="w-16 h-16 rounded-lg bg-accent/10 flex items-center justify-center mx-auto">
                 <Mail className="w-8 h-8 text-accent" />
               </div>
               <div className="space-y-2">
@@ -68,7 +68,7 @@ export const Contact = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="hover:bg-secondary/80 hover:-translate-y-1 hover:text-accent transition-smooth text-lg px-8 py-6 rounded-full shadow-lg"
+                className="hover:bg-secondary/80 hover:-translate-y-1 hover:text-accent transition-smooth text-lg px-8 py-6 rounded-lg shadow-lg"
                 onClick={() => window.open("mailto:gomes.rayani.96@gmail.com", "_blank")}
               >
                 <Mail className="mr-2 h-5 w-5" />

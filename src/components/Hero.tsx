@@ -74,7 +74,7 @@ export const Hero = () => {
             <Button
               size="lg"
               onClick={handleCTA}
-              className="group bg-accent text-accent-foreground shadow-lg hover:bg-accent/80 hover:-translate-y-1 transition-all duration-300 text-lg px-8 py-6 rounded-full"
+              className="group bg-accent text-accent-foreground shadow-lg hover:bg-accent/80 hover:-translate-y-1 transition-all duration-300 text-lg px-8 py-6 rounded-lg"
             >
               Pedir Orçamento Agora
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -85,7 +85,7 @@ export const Hero = () => {
               onClick={() =>
                 document.getElementById("servicos")?.scrollIntoView({ behavior: "smooth" })
               }
-              className="hover:bg-secondary/80 hover:-translate-y-1 hover:text-accent transition-smooth text-lg px-8 py-6 rounded-full shadow-lg"
+              className="hover:bg-secondary/80 hover:-translate-y-1 hover:text-accent transition-smooth text-lg px-8 py-6 rounded-lg shadow-lg"
             >
               Ver Serviços
             </Button>

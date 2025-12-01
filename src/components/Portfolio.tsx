@@ -26,8 +26,9 @@ export const Portfolio = () => {
       <div className="container px-4">
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold underline underline-offset-8 decoration-accent decoration-4">
-            Portfólio
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold">
+            Nosso
+            <span className="block text-accent">Portfólio</span>
           </h2>
           <p className="text-lg text-muted-foreground">
             Confira alguns dos nossos trabalhos de diagramação e design de

@@ -45,10 +45,10 @@ export const Navbar = () => {
     };
 
   return (
-    <header className="w-full flex justify-center right-4 items-center fixed top-8 z-30">
-      <div className="container inline-flex justify-between items-center p-6 rounded-full h-16 bg-background/30 text-accent shadow-xl backdrop-blur-sm border border-accent">
+    <header className="w-full flex justify-center px-4 items-center fixed top-8 z-30">
+      <div className="container inline-flex justify-between items-center p-6 rounded-xl h-16 bg-white/70 shadow-lg backdrop-blur-sm border">
         <a href="/" className="flex items-center" onClick={handleClick("home")}>
-          <img src="/logo.webp" alt="Logo" className="w-10 h-8 object-cover" />
+          <img src="/logo.webp" alt="Logo" className="w-10 h-8 object-cover invert" />
         </a>
         <nav className="hidden md:flex gap-6 items-center">
           {LINKS.map((link) => {
@@ -60,8 +60,8 @@ export const Navbar = () => {
                 onClick={handleClick(link.id)}
                 className={`text-sm font-medium transition-all duration-200 ${
                   isActive
-                    ? "text-accent text-shadow-lg shadow-accent"
-                    : "text-foreground hover:text-shadow-lg hover:shadow-accent hover:text-accent hover:scale-105"
+                    ? "text-accent font-semibold underline underline-offset-4 decoration-2 decoration-accent"
+                    : "text-foreground hover:font-semibold hover:text-accent hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-accent hover:scale-102"
                 }`}
               >
                 {link.label}
@@ -74,11 +74,11 @@ export const Navbar = () => {
           <button
             aria-label="Abrir menu"
             onClick={() => setOpen((v) => !v)}
-            className="p-2 rounded-md text-foreground/90 hover:bg-gray-100 dark:hover:bg-gray-800"
+            className="p-2"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-6 w-6 hover:text-accent transition-colors duration-200"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -104,7 +104,7 @@ export const Navbar = () => {
       </div>
 
       {open && (
-        <div className="md:hidden bg-background border-t border-border">
+        <div className="md:hidden fixed top-24 left-4 right-4 bg-white/80 backdrop-blur-sm transition duration-300 shadow-lg rounded-xl border">
           <div className="flex flex-col px-4 py-3 gap-2">
             {LINKS.map((link) => (
               <a
@@ -113,8 +113,8 @@ export const Navbar = () => {
                 href={`#${link.id}`}
                 className={`py-2 ${
                   active === link.id
-                    ? "text-accent font-semibold"
-                    : "text-foreground/90"
+                    ? "text-white text-center font-semibold underline underline-offset-4 decoration-2 decoration-white bg-accent/80 rounded-lg"
+                    : "text-foreground text-center hover:font-semibold hover:text-white hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-wihite hover:bg-accent/80 rounded-lg"
                 }`}
               >
                 {link.label}
