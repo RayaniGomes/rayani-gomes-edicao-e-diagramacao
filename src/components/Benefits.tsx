@@ -56,7 +56,7 @@ export const Benefits = () => {
             return (
               <div
                 key={index}
-                className="h-[160px] group p-6 rounded-2xl border border-border/50 bg-card shadow-lg hover:bg-accent/5 hover:border-accent/30 transition-all duration-300 hover:shadow-medium"
+                className="h-[200px] md:h-[160px] group p-6 rounded-2xl border border-border/50 bg-card shadow-lg hover:bg-accent/5 hover:border-accent/30 transition-all duration-300 hover:shadow-medium"
               >
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors shadow-lg">

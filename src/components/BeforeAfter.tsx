@@ -20,7 +20,7 @@ export const BeforeAfter = () => {
         <div className="max-w-6xl mx-auto flex flex-wrap justify-center items-start gap-8">
           {comparisons.map((item, index) => (
             <div key={index} className=" space-y-4">
-              <div className="flex justify-center gap-4">
+              <div className="flex flex-wrap justify-center gap-4">
                 {/* Before Image */}
                 <div className="relative group overflow-hidden rounded-2xl shadow-lg">
                   <img

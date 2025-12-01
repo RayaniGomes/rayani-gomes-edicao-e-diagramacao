@@ -87,7 +87,7 @@ export const Portfolio = () => {
               <div className="overflow-auto h-[80vh]">
                 <div className="flex flex-col h-full overflow-y-auto">
                   {selectedProject.images.length > 1 && (
-                    <div className="grid grid-cols-2 gap-2 pt-0 p-4 justify-center">
+                    <div className="grid grid-cols-1 gap-2 pt-0 p-4 md:grid-cols-2 justify-center">
                       {selectedProject.images.map((img, idx) => (
                         <img
                           src={img}

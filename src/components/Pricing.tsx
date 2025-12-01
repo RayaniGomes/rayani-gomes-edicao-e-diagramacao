@@ -205,7 +205,7 @@ export const Pricing = () => {
           <Button
             size="lg"
             onClick={handleContact}
-            className="group bg-accent text-accent-foreground shadow-lg hover:bg-accent/80 hover:-translate-y-1 transition-all duration-300 text-lg px-8 py-6 rounded-full"
+            className="w-full md:w-80 bg-accent text-accent-foreground shadow-lg hover:bg-accent/80 hover:-translate-y-1 transition-all duration-300 text-lg px-8 py-6 rounded-lg"
           >
             Solicitar Orçamento Personalizado
           </Button>

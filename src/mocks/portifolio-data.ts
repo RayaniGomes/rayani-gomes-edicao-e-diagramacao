@@ -1,4 +1,4 @@
-import gestenteCapa from "@/assets/portfolio/album1/capa-1.webp";
+import gestenteCapa from "@/assets/portfolio/album1/capa-11.webp";
 import gestante1 from "@/assets/portfolio/album1/gestante_01.webp";
 import gestante2 from "@/assets/portfolio/album1/gestante_02.webp";
 import gestante3 from "@/assets/portfolio/album1/gestante_03.webp";
