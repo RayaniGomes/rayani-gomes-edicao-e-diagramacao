@@ -14,6 +14,6 @@ export const comparisons = [
     before: before1,
     after: after1,
     title: "Edição Avançada",
-    description: "Tratamento de pele, preenchimento de fundo ecorreção de iluminação",
+    description: "Tratamento de pele, preenchimento de fundo e correção de iluminação",
   },
 ];
