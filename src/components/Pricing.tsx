@@ -41,7 +41,7 @@ export const Pricing = () => {
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <Card className="hover:shadow-gold transition-shadow shadow-lg relative">
-              <div className="absolute -top-3 right-0 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full z-50">
+              <div className="absolute -top-3 right-0 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">
                 -15%
               </div>
               <CardHeader>
@@ -70,7 +70,7 @@ export const Pricing = () => {
             </Card>
 
             <Card className="hover:shadow-gold transition-shadow shadow-lg relative">
-              <div className="absolute -top-3 right-0 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full z-50">
+              <div className="absolute -top-3 right-0 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">
                 -15%
               </div>
               <CardHeader>
@@ -100,10 +100,10 @@ export const Pricing = () => {
             </Card>
 
             <Card className="border-accent border-2 hover:shadow-gold transition-shadow shadow-lg relative overflow-visible">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-accent text-accent-foreground text-xs font-bold rounded-full z-50">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-accent text-accent-foreground text-xs font-bold rounded-full">
                 COMBO
               </div>
-              <div className="absolute -top-3 right-0 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full z-50">
+              <div className="absolute -top-3 right-0 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">
                 -15%
               </div>
               <CardHeader>
@@ -133,7 +133,7 @@ export const Pricing = () => {
             </Card>
 
             <Card className="hover:shadow-gold transition-shadow shadow-lg relative overflow-visible">
-              <div className="absolute -top-3 right-0 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full z-50">
+              <div className="absolute -top-3 right-0 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">
                 -15%
               </div>
               <CardHeader>
@@ -171,7 +171,7 @@ export const Pricing = () => {
               Edição Simples
             </h3>
             <Card className="relative">
-              <div className="absolute -top-3 right-0 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full z-50">
+              <div className="absolute -top-3 right-0 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">
                 -20%
               </div>
               <CardContent className="p-6">
@@ -247,7 +247,7 @@ export const Pricing = () => {
               Edição Avançada
             </h3>
             <Card className="relative ">
-              <div className="absolute -top-3 right-0 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full z-50">
+              <div className="absolute -top-3 right-0 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">
                 -20%
               </div>
               <CardContent className="p-6">
